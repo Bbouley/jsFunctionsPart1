@@ -37,11 +37,39 @@ console.log(stringCapitalize(str))
 
 var random = (Math.random()*100).toFixed(0);
 
-function evenNumbers(random){
+function evenNumbers(){
   for (var i = 0; i <= random; i++)
     if (i%2 === 0){
       console.log(i);
-    }
+    };
   }
 
-  evenNumbers(random)
+evenNumbers(random)
+
+function isDivisible (x,y){
+  if (x%y === 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isDivisible(3,2))
+
+function oddNumbers(){
+   if (random > 40){
+     for (var i = 40; i <= random; i++){
+       if(i%2 != 0){
+         console.log(i);
+       }
+     }
+   } else {
+    for (var i = 0; i <= 40; i++){
+      if (i%2 != 0){
+        console.log(i);
+      }
+    }
+   }
+}
+
+oddNumbers(random)
