@@ -33,3 +33,15 @@ function stringCapitalize (str){
 
 var str = 'this is a string'
 console.log(stringCapitalize(str))
+
+
+var random = (Math.random()*100).toFixed(0);
+
+function evenNumbers(random){
+  for (var i = 0; i <= random; i++)
+    if (i%2 === 0){
+      console.log(i);
+    }
+  }
+
+  evenNumbers(random)
